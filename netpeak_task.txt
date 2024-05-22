@@ -1,0 +1,24 @@
+Написати код на чистому PHP (без використання фреймворків та сторонніх бібліотек), який буде рандомно радити відпочинок за бажаною кількістю учасників та вказаним типом і відправляти пораду декількома можливими способами.
+Запуск скрипта повинен відбуватися через консоль з прийняттям трьох параметрів:
+кількість учасників (integer participants), значення в діапазоні 0 - 8.
+тип відпочинку (string type), значення: ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"] - згідно з документацією API.
+спосіб відправки повідомлення (string sender), значення: ["file", "console"].
+Після того, як скрипт отримає вказані параметри, потрібно реалізувати звернення до хоста http://www.boredapi.com/api/activity і вказати через get-параметри значення змінних participants та type.
+Приклад: https://www.boredapi.com/api/activity?participants=5&type=social
+Після отримання поради записати її у файл або вивести в консоль - в залежності від вказаного типу відправки.
+Реалізацію скрипта зробити з притримуванням SOLID практик.
+Код потрібно розмістити в github репозиторії, в Readme дати короткий опис запуску скрипта.
+
+
+Write a code in pure PHP (without the use of frameworks and third-party libraries) that will randomly advise a vacation according to the desired number of participants and the specified type and send the advice in several possible ways.
+The script must be launched through the console with the acceptance of three parameters:
+number of participants (integer participants), values in the range 0 - 8.
+recreation type (string type), value: ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"] - according to the documentation API.
+method of sending the message (string sender), value: ["file", "console"].
+After the script receives the specified parameters, it is necessary to implement a call to the host http://www.boredapi.com/api/activity and specify the values of the participants and type variables through the get parameters.
+Example: https://www.boredapi.com/api/activity?participants=5&type=social
+After receiving the advice, write it in a file or output it to the console - depending on the specified type of sending.
+The implementation of the script should be done with adherence to SOLID practices.
+The code should be placed in the github repository, a brief description of the script launch should be given in the Readme.
+
+
